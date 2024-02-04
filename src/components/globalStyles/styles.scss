@@ -1,0 +1,26 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+    font-family: Kraken Plex Mono, monospace;
+  }
+  
+  #root {
+    margin: 0 auto;
+  }
+  
+  body {
+    background-color: #121723;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;  // Ensure the container takes at least the full viewport height
+  }
+  
+  .orderBook {
+    flex: 1;  // This makes the order book expand to fill the remaining space
+  }
+  

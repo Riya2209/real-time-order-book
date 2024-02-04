@@ -1,0 +1,26 @@
+// TitleRow.scss
+.title-row {
+  display: flex;
+  justify-content: space-around;
+  color: #98a6af;
+  padding: 0.3em;
+  background-color: #121723;
+
+  span {
+    min-width: 5rem;
+  }
+
+  &.reversed {
+    span {
+      &:first-child {
+        order: 3;
+      }
+      &:nth-child(2) {
+        order: 2;
+      }
+      &:last-child {
+        order: 1;
+      }
+    }
+  }
+}

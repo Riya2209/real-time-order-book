@@ -1,0 +1,53 @@
+// PriceLevelRow.scss
+.price-level-row {
+  display: flex;
+  justify-content: space-around;
+  background-color: #121723;
+  position: relative;
+
+  &:after {
+    background-color: #3d1e28;
+    background-position: center;
+    height: 100%;
+    padding: 0.3em 0;
+    display: block;
+    content: "";
+    position: absolute;
+    left: 0;
+    right: unset;
+    z-index: 0;
+
+    @media only screen and (min-width: 800px) {
+      left: unset;
+      right: 0;
+    }
+  }
+
+  span {
+    z-index: 1;
+    min-width: 54px;
+  }
+
+  &.reversed {
+    &:after {
+      background-color: #113534;
+
+      @media only screen and (min-width: 800px) {
+        left: 0;
+        right: unset;
+      }
+    }
+
+    .price {
+      color: #118860;
+    }
+  }
+
+  .price {
+    color: #bb3336;
+  }
+}
+
+.price-level-row-container {
+  margin: 0.155em 0;
+}
